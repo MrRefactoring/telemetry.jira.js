@@ -1,5 +1,5 @@
 export interface TelemetryConfig {
-  allowedToPassMethodName?: boolean;
   allowedToPassAuthenticationType?: boolean;
-  allowedToPassRequestStatus?: boolean;
+  allowedToPassRequestStatusCode?: boolean;
+  allowedToPassRequestTimings?: boolean;
 }

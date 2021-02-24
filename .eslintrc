@@ -6,7 +6,7 @@
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.tests.json"
   },
   "plugins": [
     "import"
@@ -25,6 +25,7 @@
   },
   "rules": {
     "import/prefer-default-export": "off",
-    "no-mixed-operators": "off"
+    "no-mixed-operators": "off",
+    "class-methods-use-this": "off"
   }
 }

@@ -1,3 +1,4 @@
-export * from './telemetryClient';
-export * from './telemetryConfig';
+export * from './authentication';
 export * from './telemetry';
+export * from './telemetryConfig';
+export * from './telemetryClient';
