@@ -1,8 +1,8 @@
 {
-  "name": "telemetry.trello.js",
+  "name": "telemetry.jira.js",
   "version": "1.0.0",
-  "description": "Telemetry client for trello.js",
-  "repository": "https://github.com/MrRefactoring/telemetry.trello.js",
+  "description": "Telemetry client for jira.js",
+  "repository": "https://github.com/MrRefactoring/telemetry.jira.js",
   "author": "Vladislav Tupikin <mrrefactoring@yandex.ru>",
   "main": "out/index.js",
   "types": "out/index.d.ts",
