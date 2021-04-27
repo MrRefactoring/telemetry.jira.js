@@ -16,4 +16,5 @@ export interface Telemetry {
   requestStatusCode: number,
   requestStartTime: Date,
   requestEndTime: Date,
+  noCheckAtlassianToken?: boolean;
 }

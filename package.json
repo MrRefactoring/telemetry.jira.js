@@ -1,6 +1,6 @@
 {
   "name": "telemetry.jira.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Telemetry client for jira.js",
   "repository": "https://github.com/MrRefactoring/telemetry.jira.js",
   "author": "Vladislav Tupikin <mrrefactoring@yandex.ru>",
@@ -18,18 +18,20 @@
     "preset": "ts-jest"
   },
   "devDependencies": {
-    "@types/node-fetch": "^2.5.8",
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
-    "eslint": "^7.21.0",
+    "@types/jest": "^26.0.23",
+    "@types/node-fetch": "^2.5.10",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
     "jest": "^26.6.3",
-    "ts-jest": "^26.5.2",
-    "typescript": "^4.2.2"
+    "ts-jest": "^26.5.5",
+    "typescript": "^4.2.4"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "nodejs-user-agent": "^1.0.0"
   }
 }
