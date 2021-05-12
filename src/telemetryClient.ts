@@ -1,5 +1,4 @@
 import fetch, { RequestInit } from 'node-fetch';
-import { ua } from 'nodejs-user-agent';
 import { TelemetryConfig } from './telemetryConfig';
 import { Telemetry } from './telemetry';
 import { version, endpoint, hash } from './sensitiveInformation.json';
@@ -19,6 +18,7 @@ interface ServerTime {
 
 type TelemetryBody = Partial<Telemetry> & TelemetryMetadata;
 
+let ua: (lib?: string, version?: string) => string;
 const timeOffsetEndpoint = 'https://worldtimeapi.org/api/timezone/Etc/UTC';
 
 export class TelemetryClient {
@@ -66,6 +66,12 @@ export class TelemetryClient {
 
         if (!isBrowser()) {
           const { libVersion } = this.queue[0];
+
+          if (!ua) {
+            // eslint-disable-next-line global-require
+            const userAgent = require('nodejs-user-agent');
+            ua = userAgent.ua;
+          }
 
           headers['User-Agent'] = ua('jira.js', libVersion);
         }
