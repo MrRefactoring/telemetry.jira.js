@@ -28,6 +28,11 @@
     "no-mixed-operators": "off",
     "class-methods-use-this": "off",
     "@typescript-eslint/lines-between-class-members": "off",
-    "@typescript-eslint/no-unused-expressions": "off"
+    "@typescript-eslint/no-unused-expressions": "off",
+    "no-param-reassign": "off",
+    "global-require": "off",
+    "max-len": ["error", {
+      "code": 120
+    }]
   }
 }
