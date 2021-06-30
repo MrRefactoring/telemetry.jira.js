@@ -84,6 +84,6 @@ export class TelemetryClient {
   }
 
   private setDebounce() {
-    this.debounce = setTimeout(() => this.sendBulk(), 10_000);
+    this.debounce = setTimeout(() => this.sendBulk(), 10);
   }
 }

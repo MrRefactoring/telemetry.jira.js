@@ -83,7 +83,7 @@ export class ApiClient {
     const localTime = new Date();
 
     this.timeDifference = serverTime
-      ? Math.floor((serverTime.getTime() - localTime.getTime()) / 1000)
+      ? Math.floor(((serverTime.getTime() - 100) - localTime.getTime()) / 1000)
       : undefined;
 
     return this.timeDifference;
